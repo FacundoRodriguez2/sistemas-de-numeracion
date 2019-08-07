@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title> TP Proyecto informatico "conversor de sistemas de numeracion" </title>
+<link href="style.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+<div id="main">
+<h1>Conversor de sistemas de numeracion</h1>
+<p>Introduce un numero</p>
+
+      <form name="formulario">
+
+        <div class="contenido">
+
+          <input id="input" type="text" name="desde" value="">
+          <label class="tipo" for="desde">De:</label>
+          <select id="desde" name="Sistema Uno">
+            <option value="bin">Binario</option>
+            <option value="oct">Octal</option>
+            <option value="dec">Decimal</option>
+            <option value="hex">Hexadecimal</option>
+          </select>
+
+
+          <label class="tipo" for="hacia">A:</label>
+          <select id="hacia" name="Sistema Dos">
+            <option value="bin">Binario</option>
+            <option value="oct">Octal</option>
+            <option value="dec" selected>Decimal</option>
+            <option value="hex">Hexadecimal</option>
+          </select> <br> <br>
+
+
+
+<button id="convertir" type="button" onclick="conversion()">Convertir</button>
+
+</form>
+<div class="inferior">
+
+
+        <h2 id="textresult">Resultado:</h2>
+        <p id="resultado">0</p>
+
+      </div>
+
+</div>
+<script src="script.js"></script>
+<footer class="pie">
+       <p id="nombre">Facundo Rodriguez 4º1º</p> <br>
+       <a id="repo" href="https://github.com/FacundoRodriguez2/sistemas-de-numeracion">Repositorio GitHub</a>
+     </footer>
+</body>
+</html>
